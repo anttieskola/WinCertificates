@@ -55,6 +55,7 @@ namespace WinCertificates.Catalog
                             SimpleName = cert.GetNameInfo(X509NameType.SimpleName, true),
                             HasPublicKey = !string.IsNullOrEmpty(cert.GetPublicKeyString()),
                             Verified = cert.Verify(),
+                            IsValid = cert.NotAfter < DateTime.Now,
                         });
                     }
 
