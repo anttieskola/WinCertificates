@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WinCertificates.Catalog": {
+      "commandName": "Project",
+      "commandLineArgs": "c:\\temp\\catalog.csv"
+    }
+  }
+}
